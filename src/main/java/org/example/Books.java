@@ -3,6 +3,8 @@ package org.example;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "borrow_permitted")
@@ -17,6 +19,11 @@ public class Books {
     @ManyToOne
     @JoinColumn(name = "author_id")
     private Author author;
+
+    @ManyToMany
+    private List<UserFavList> userFavLists;
+
+
 
     public Books(String title , Author author , Boolean available  ){
         this.title = title;
@@ -57,6 +64,15 @@ public class Books {
 
     public void setAvailable(Boolean available) {
         this.available = available;
+    }
+
+
+    public List<UserFavList> getUserFavLists() {
+        return userFavLists;
+    }
+
+    public void setUserFavLists(List<UserFavList> userFavLists) {
+        this.userFavLists = userFavLists;
     }
 
     @Override

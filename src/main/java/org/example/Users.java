@@ -18,6 +18,10 @@ public class Users {
     private byte[] user_image ;
 
     @OneToOne
+    @JoinColumn(name = "fav_list_id")
+    private UserFavList favList;
+
+    @OneToOne
     @JoinColumn(name="library_id" , referencedColumnName = "library_id")
     private LibraryProfileForPerson libraryProfile;
 
