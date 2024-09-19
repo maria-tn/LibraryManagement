@@ -21,17 +21,21 @@ public class Users {
     @JoinColumn(name = "fav_list_id")
     private UserFavList favList;
 
-    @OneToOne
+/*    @OneToOne
     @JoinColumn(name="library_id" , referencedColumnName = "library_id")
-    private LibraryProfileForPerson libraryProfile;
+    private LibraryProfileForPerson libraryProfile;*/
 
+/*
     public LibraryProfileForPerson getLibraryProfile() {
         return libraryProfile;
     }
+*/
 
+/*
     public void setLibraryProfile(LibraryProfileForPerson libraryProfile) {
         this.libraryProfile = libraryProfile;
     }
+*/
     public int getBorrowedNum() {
         return borrowedNum;
     }

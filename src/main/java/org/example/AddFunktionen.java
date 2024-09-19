@@ -51,24 +51,24 @@ public class AddFunktionen {
         newUser1.setName("maxi");
         newUser1.setEmail("maxi@mail.com");
         LibraryProfileForPerson profile1= new LibraryProfileForPerson(202401,"max_101");
-        emUser.persist(profile1);
-        newUser1.setLibraryProfile(profile1);
+        /*emUser.persist(profile1);*/
+        /*newUser1.setLibraryProfile(profile1);*/
         emUser.persist(newUser1);
 
         Users newUser2 = new Users();
         newUser2.setName("Allexi");
         newUser2.setEmail("Allexi@mail.com");
         LibraryProfileForPerson profile2= new LibraryProfileForPerson(202402,"allex_102");
-        emUser.persist(profile2);
-        newUser2.setLibraryProfile(profile2);
+        /*emUser.persist(profile2);*/
+        /*newUser2.setLibraryProfile(profile2);*/
         emUser.persist(newUser2);
 
         Users newUser3 = new Users();
         newUser3.setName("martini");
         newUser3.setEmail("martini@mail.com");
         LibraryProfileForPerson profile3= new LibraryProfileForPerson(202403,"martin_103");
-        emUser.persist(profile3);
-        newUser3.setLibraryProfile(profile3);
+        /*emUser.persist(profile3);*/
+        /*newUser3.setLibraryProfile(profile3);*/
         emUser.persist(newUser3);
 
         emUser.getTransaction().commit();

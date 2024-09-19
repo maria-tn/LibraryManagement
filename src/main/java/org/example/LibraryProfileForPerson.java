@@ -30,11 +30,6 @@ public class LibraryProfileForPerson {
 
     }
 
-
-
-
-
-
     public int getId() {
         return id;
     }
